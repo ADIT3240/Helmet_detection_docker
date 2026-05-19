@@ -13,7 +13,7 @@ services:
     staticPublishPath: ./frontend/dist
     envVars:
       - key: VITE_API_BASE
-        value: https://helmet-detection-api.onrender.com
+        value: https://helmet-detection-api-p4aa.onrender.com
     routes:
       - type: rewrite
         source: /*
