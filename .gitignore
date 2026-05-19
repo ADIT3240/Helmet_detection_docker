@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+helmet_env/
+
+# Model weights — add manually or via Git LFS
+# backend/models/*.pt
+
+# Video files
+backend/uploads/
+backend/outputs/
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store

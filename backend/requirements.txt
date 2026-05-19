@@ -1,0 +1,8 @@
+fastapi==0.115.0
+loguru==0.7.2
+logtail-python==0.3.3
+uvicorn[standard]==0.30.6
+opencv-python-headless==4.10.0.84
+ultralytics==8.3.107
+python-multipart==0.0.12
+numpy>=1.21.0

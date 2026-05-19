@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: helmet-detection-api
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+
+  - type: web
+    name: helmet-detection-ui
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_API_BASE
+        value: https://helmet-detection-api.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
